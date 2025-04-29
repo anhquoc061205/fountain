@@ -113,7 +113,8 @@ box-sizing: border-box;
     justify-content: space-between;
 }
 .icon{
-   
+    cursor: pointer;
+   margin-bottom: 20px;
     background-color: #FF6F28;
     border-radius: 50%;
     width: 50px;
@@ -159,6 +160,7 @@ box-sizing: border-box;
     gap: 900px;
 }
 .prev{
+    cursor: pointer;
     background-color: #FF6F28;
     border-radius: 50%;
     width: 50px;
@@ -169,6 +171,7 @@ box-sizing: border-box;
     
 }
 .next{
+    cursor: pointer;
     background-color: #FF6F28;
     border-radius: 50%;
     width: 50px;
