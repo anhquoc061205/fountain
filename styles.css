@@ -18,6 +18,8 @@ header{
 }
 .header_logo{
     display: flex;
+    margin: 20px;
+    cursor: pointer;
 }
 .bars{
     display: none;
@@ -31,11 +33,42 @@ header{
   align-items: center;
 }
 .header_nav a{
+    position: relative;
     text-decoration: none;
     color: #fff;
     margin: 10px;
     font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+}
+.started{
+    transition: all 0.3s ease;
+}
+.started:hover{
+    transform: scale(1.1);
+    background-color: #FF6F28;
+}
 
+/* thay đổi màu chữ khi lia chuột vào */
+.header_nav a:hover{
+    color: aqua;
+   
+}
+/* hiệu ứng line lướt dưới font chữchữ */
+.header_nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+.header_nav a:hover::after{
+    width: 100%;
+   
 }
 .btn{
     border: none;
@@ -45,10 +78,37 @@ header{
     font-size: 18px;
 }
 .register{
-background-color:#FFF;
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid  #FF6F28;
+background: transparent;
 padding: 12px 20px;
 box-sizing: border-box;
+cursor: pointer;
+overflow: hidden;
+z-index: 1;
+
 }
+/* hover .background trượt màumàu */
+.register::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 100%;
+    background: #FF6F28;
+    transition: all 0.3s ;
+    z-index: -1;
+}
+.register:hover::before{
+    width: 100%;
+    
+}
+.register{
+    color: #FFF;
+}
+
 .background_content {
    display: flex;
    flex-direction: column;
