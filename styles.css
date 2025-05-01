@@ -16,6 +16,15 @@ header{
     height: 662px;
     color: #fff
 }
+.header_logo{
+    display: flex;
+}
+.bars{
+    display: none;
+}
+.human{
+    display: none;
+}
  .header_container{
     display: flex;
   justify-content: space-between;
@@ -49,6 +58,8 @@ box-sizing: border-box;
     color: #FFF;
     background-color: #FF6F28;
     padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .font{
     margin-top: 100px;
@@ -180,3 +191,117 @@ box-sizing: border-box;
     align-items: center;
     justify-content: center;
 }
+/* --------------------------------------------------responsive----------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+    .header_container .header_nav{
+        /* display: none; */
+    }
+    header{
+        background-image: none;
+    }
+    .human{
+        display: flex !important;
+        color: #FF6F28;
+        font-size: 45px;
+        margin: 10px;
+    }
+    .login{
+        display: none;
+    }
+    .register{
+        display: none;
+    }
+    .header_logo{
+        display: flex
+;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+    margin: 10px;
+    color: black;
+
+    }
+    /* logo header */
+    .background_content{
+        background-image: url("./images/image\ 13.png");
+        height: 600px;
+        width: 100%;
+        left: -20px;
+        gap: 30px;
+        .We{
+            color: #FFFFFF;
+           width: 291px;
+           font-weight: 400;
+        }
+        .started{
+            width: 150px;
+            height: 55px;
+        }
+        }
+    
+        .header_nav{
+           display: flex;
+           flex-direction: column;
+           top: 0;
+           left: -100%;
+           position: fixed;
+           width: 30%;
+           height: 70vh;
+           background-color: #FF6F28;
+           text-align: right;
+           cursor: pointer;
+           transition: all 0.6s ease;
+
+
+        }
+        .header_nav.active{
+            left: 0;
+        }
+        .bars{
+            z-index: 3;
+            position: relative;
+            display: block;
+        }
+       
+
+    .service_container{
+        margin: 70px;
+        .service{
+            width: 0;
+             height: 0;
+
+        }
+          
+        .menu-item:nth-child(3) {
+            
+            flex-basis: 100%;
+            justify-content: center;
+         }
+            
+        
+        }
+        
+      
+        .line{
+            display: none;
+        }
+        .categori{
+            .categori__item{
+               width: 100%;
+              
+            }
+            
+        }
+        .nexts{
+        .next{
+            display: none;
+
+        }
+        .prev{
+            display: none;
+        }
+        }
+
+}
+    

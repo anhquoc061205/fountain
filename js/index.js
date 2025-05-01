@@ -26,5 +26,24 @@ document.addEventListener("DOMContentLoaded", function (){
     });
   });
 
+  // menu
+  const menuToggle = document.getElementById("menu_toggle");
+  const mobileNav = document.getElementById("mobile_nav")
+  const barsIcon = document.getElementById("bar_icon")
+  const closeIcon = document.getElementById("close_icon")
+  // Add event for menuToggel
+    menuToggle.addEventListener("click", function (){  
+    mobileNav.classList.toggle("active")
+
+    
+  if(mobileNav.classList.contains("active")){
+      // đã bấm vào Icon => ấn bar icon và hiện close icon
+      barsIcon.style.display = "none"
+      closeIcon.style.display = "block"
+  }else{
+      barsIcon.style.display = "block"
+      closeIcon.style.display = "none"
+  }
  
+  }) 
 })
